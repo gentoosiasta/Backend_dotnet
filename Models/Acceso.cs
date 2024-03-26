@@ -22,7 +22,7 @@ namespace Backend_dotnet.Models
 
         [Required]
         [StringLength(3)]
-        public string? Tipo_usuario { get; set; }
+        public string? TipoUsuario { get; set; }
 
         [Required]
         [StringLength(1)]
