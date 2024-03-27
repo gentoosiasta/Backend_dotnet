@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Backend_dotnet.Models
 {
-    public class ActividadesApoyo
+    public class ActividadApoyo
     {
         [Key]
         [StringLength(10)]
