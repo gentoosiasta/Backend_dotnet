@@ -124,8 +124,9 @@ namespace Backend_dotnet.Models
         public string? DomicilioEscuela { get; set; }
 
         [Required]
+        [ForeignKey("EntidadFederativaId")]
         [Column(name: "entidad_procedencia")]
-        public int EntidadProcedencia { get; set; }
+        public virtual EntidadFederativa? EntidadProcedencia { get; set; }
 
         [Required]
         [StringLength(30)]
