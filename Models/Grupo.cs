@@ -4,6 +4,7 @@ using Backend_dotnet.Models;
 
 namespace Backend_dotnet
 {
+    [Table("grupos")]
     public class Grupo
     {
         [Key, Column(name: "Periodo", Order = 0)]

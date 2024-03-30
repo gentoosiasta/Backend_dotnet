@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
+    [Table("periodos_escolares")]
     public class PeriodoEscolar
     {
         [Key]

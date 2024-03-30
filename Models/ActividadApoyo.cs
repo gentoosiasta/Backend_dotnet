@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
+    [Table("actividades_apoyo")]
     public class ActividadApoyo
     {
         [Key]
