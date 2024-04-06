@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Backend_dotnet.Models;
 
-namespace Backend_dotnet
+namespace Backend_dotnet.Models
 {
     [Table("grupos")]
     public class Grupo

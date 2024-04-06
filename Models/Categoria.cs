@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Backend_dotnet
+namespace Backend_dotnet.Models
 {
     [Table("categorias")]
     public class Categoria
