@@ -3,46 +3,40 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
-    [Table("acceso")]
-    public class Acceso
+    public class Access
     {
         [Key]
         [StringLength(30)]
-        [Column(name: "usuario")]
-        public string? Usuario { get; set; }
+        public string? UserName { get; set; }
 
         [StringLength(100)]
-        [Column(name: "nombre")]
-        public string? Nombre { get; set; }
+        public string? Name { get; set; }
+
+        [ForeignKey("RFC")]
+        public virtual Staff? RFC { get; set; }
 
         [Required]
         [StringLength(100)]
-        [Column(name: "password")]
         public string? Password { get; set; }
 
         [Required]
         [StringLength(50)]
-        [Column(name: "email")]
         public string? Email { get; set; }
 
         [Required]
         [StringLength(3)]
-        [Column(name: "tipo_usuario")]
-        public string? TipoUsuario { get; set; }
+        public string? TypeOfUser { get; set; }
 
         [Required]
         [StringLength(1)]
-        [Column(name: "estatus")]
-        public string? Estatus { get; set; }
+        public string? Status { get; set; }
 
-        [Column(name: "creado")]
         [DataType(DataType.DateTime)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime Creado { get; set; }
+        public DateTime CreatedAt { get; set; }
 
-        [Column(name: "actualizado")]
         [DataType(DataType.DateTime)]
         [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime Actualizado { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }
