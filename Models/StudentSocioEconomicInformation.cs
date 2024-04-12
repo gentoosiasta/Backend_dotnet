@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using MyNamespace.Models;
 
 namespace Backend_dotnet.Models
 {
@@ -34,5 +35,17 @@ namespace Backend_dotnet.Models
 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal TotalIncome { get; set; }
+
+        [ForeignKey("ParentJobID")]
+        public virtual ParentJob? FatherJob { get; set; }
+
+        [ForeignKey("ParentJobID")]
+        public virtual ParentJob? MotherJob { get; set; }
+
+        [ForeignKey("WhoStudentDependOnID")]
+        public virtual WhoStudentDependOn? WhoStudentDependOn { get; set; }
+
+        [ForeignKey("HomeMaterialID")]
+        public virtual HomeMaterial? HomeMaterial { get; set; }
     }
 }
