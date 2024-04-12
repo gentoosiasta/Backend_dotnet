@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backend_dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8ebf90d4e33c95c11372cb8125d5ea52e3fca5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24084595b8eef0c15d8b75c994c4cf1961d2926e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backend_dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backend_dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
