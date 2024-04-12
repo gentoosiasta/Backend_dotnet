@@ -16,7 +16,8 @@ namespace Backend_dotnet.Models
         [ForeignKey("SchoolLevelId")]
         public virtual SchoolLevel? MotherSchoolLevel { get; set; }
 
-        public int HowManyDoYouLiveWith { get; set; }
+        [ForeignKey("WhoStudentLiveWithID")]
+        public virtual SocEc_WhoStudentLiveWith? WhoStudentLiveWith { get; set; }
 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal FatherIncome { get; set; }
@@ -43,9 +44,27 @@ namespace Backend_dotnet.Models
         public virtual ParentJob? MotherJob { get; set; }
 
         [ForeignKey("WhoStudentDependOnID")]
-        public virtual WhoStudentDependOn? WhoStudentDependOn { get; set; }
+        public virtual SocEc_WhoStudentDependOn? WhoStudentDependOn { get; set; }
 
         [ForeignKey("HomeMaterialID")]
-        public virtual HomeMaterial? HomeMaterial { get; set; }
+        public virtual SocEc_HomeMaterial? HomeMaterial { get; set; }
+
+        [ForeignKey("HomeRoomsAndPeopleID")]
+        public virtual SocEc_HomeRoomsAndPeople? HomeRooms { get; set; }
+
+        [ForeignKey("HomeRoomsAndPeopleID")]
+        public virtual SocEc_HomeRoomsAndPeople? PeopleLiveHome { get; set; }
+
+        [ForeignKey("HomeRoomsAndPeopleID")]
+        public virtual SocEc_HomeRoomsAndPeople? PeopleDependOnYou { get; set; }
+
+        [StringLength(20)]
+        public string? BloodType { get; set; }
+
+        [StringLength(50)]
+        public string? EmergencyContact { get; set; }
+
+        [StringLength(10)]
+        public string? EmergencyPhone { get; set; }
     }
 }

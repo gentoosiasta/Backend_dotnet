@@ -5,8 +5,8 @@ namespace Backend_dotnet.Models
 {
     public class Institution
     {
-        [ForeignKey("WorkcenterID")]
-        public virtual Workcenter? Workcenter { get; set; }
+        [ForeignKey("WorkCenterID")]
+        public virtual WorkCenter? WorkCenter { get; set; }
 
         public Byte[]? Logo { get; set; }
     }

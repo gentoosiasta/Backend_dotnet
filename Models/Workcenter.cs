@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
-    public class Workcenter
+    public class WorkCenter
     {
         [Key]
         [StringLength(10)]
-        public string? WorkcenterID { get; set; }
+        public string? WorkCenterID { get; set; }
 
         [StringLength(1)]
         public string? EconomicZone { get; set; }
@@ -17,11 +17,11 @@ namespace Backend_dotnet.Models
 
         [Required]
         [StringLength(2)]
-        public string? WorkcenterKey { get; set; }
+        public string? WorkCenterCode { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string? WorkcenterName { get; set; }
+        public string? WorkCenterName { get; set; }
 
         [StringLength(60)]
         public string? Address { get; set; }

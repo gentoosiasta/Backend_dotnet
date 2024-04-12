@@ -9,8 +9,8 @@ namespace Backend_dotnet.Models
         [StringLength(13)]
         public string? RFC { get; set; }
 
-        [ForeignKey("WorkcenterID")]
-        public virtual Workcenter? Workcenter { get; set; }
+        [ForeignKey("WorkCenterID")]
+        public virtual WorkCenter? WorkCenter { get; set; }
 
         [ForeignKey("AreaID")]
         public virtual Area? Area { get; set; }
@@ -91,7 +91,7 @@ namespace Backend_dotnet.Models
         public DateOnly SchoolingEndDate { get; set; }
 
         [DataType(DataType.Date)]
-        public DateOnly TitulationDate { get; set; }
+        public DateOnly DegreeDate { get; set; }
 
         [StringLength(15)]
         public string? ProfessionalLicense { get; set; }

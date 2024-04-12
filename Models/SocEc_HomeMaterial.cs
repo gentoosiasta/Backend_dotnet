@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MyNamespace.Models
 {
-    public class HomeMaterial
+    public class SocEc_HomeMaterial
     {
         [Key]
         [StringLength(1)]

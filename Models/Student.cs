@@ -15,7 +15,7 @@ namespace Backend_dotnet.Models
 
         [Required]
         [StringLength(5)]
-        public string? Speciality { get; set; }
+        public string? Specialty { get; set; }
 
         [Required]
         [StringLength(1)]
@@ -50,7 +50,7 @@ namespace Backend_dotnet.Models
         public DateTime BirthDate { get; set; }
 
         [StringLength(1)]
-        public string? Genero { get; set; }
+        public string? Gender { get; set; }
 
         [StringLength(1)]
         public string? MaritalStatus { get; set; }
@@ -111,7 +111,7 @@ namespace Backend_dotnet.Models
         public decimal CumulativeFailureRate { get; set; }
 
         [StringLength(100)]
-        public string? ScolarshipFrom { get; set; }
+        public string? ScholarshipFrom { get; set; }
 
         public int NIP { get; set; }
 
