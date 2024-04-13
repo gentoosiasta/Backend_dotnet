@@ -22,7 +22,7 @@ namespace Backend_dotnet.Models
         public virtual Staff? Staff { get; set; }
 
         [Key, Column(Order = 4)]
-        public int Unit { get; set; }
+        public int Topic { get; set; }
 
         [Key, Column(Order = 5)]
         public int Consecutive { get; set; }
