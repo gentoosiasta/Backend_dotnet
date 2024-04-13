@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
-    public class CoursePassCriteria
+    public class CourseRequiredEquipment
     {
         [Key, Column(Order = 0)]
         [ForeignKey("Period")]
@@ -30,8 +30,5 @@ namespace Backend_dotnet.Models
         [Required]
         [StringLength(250)]
         public string? Description { get; set; }
-
-        [StringLength(600)]
-        public string? Remarks { get; set; }
     }
 }
