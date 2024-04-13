@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_dotnet.Models
 {
-    public class Crs_PartialGrade
+    public class CoursePartialGrade
     {
         [Key, Column(Order = 0)]
         [ForeignKey("Period")]
